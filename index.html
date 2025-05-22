@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fireworks.css">
+    <title>FireWorks v2.0</title>
+  </head>
+  <body>  
+    <canvas id="canvas"></canvas>
+    <div class="block-audio">
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp1.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp1.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp1.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp2.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp2.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp2.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp3.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp3.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp3.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp4.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp4.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp4.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp5.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp5.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp5.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp6.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp6.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp6.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp7.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp7.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp7.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp8.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp8.mp3" controls="controls"></audio>
+      <audio class="exp" src="http://static.dar-studio.com/codepen/audio/firework/exp8.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch1.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch1.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch2.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch2.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch3.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch3.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch4.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch4.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch5.mp3" controls="controls"></audio>
+      <audio class="launch" src="http://static.dar-studio.com/codepen/audio/firework/launch5.mp3" controls="controls"></audio>
+    </div>
+    
+    <script src="jquery.js"></script>
+    <script src="fireworks.js"></script>
+    <!-- ...existing code... -->
+    </div>
+    
+    <div id="birthday-message" style="position: fixed; bottom: 30px; width: 100%; text-align: center; font-size: 2.5em; color: #fff; letter-spacing: 0.1em; font-family: 'Comic Sans MS', cursive, sans-serif; text-shadow: 2px 2px 8px #000;"></div>
+
+    <script src="jquery.js"></script>
+    <script src="fireworks.js"></script>
+    <script>
+      // Slowly reveal "Happy Birthday"
+      const message = "Happy Birthday Menthol :p";
+      const container = document.getElementById('birthday-message');
+      let i = 0;
+      function showLetter() {
+        if (i <= message.length) {
+          container.textContent = message.slice(0, i);
+          i++;
+          setTimeout(showLetter, 200); // Adjust speed here (ms)
+        }
+      }
+      showLetter();
+    </script>
+  </body>
+</html>
+  </body>
+</html>
